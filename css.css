@@ -2,6 +2,7 @@
 .attribution a { color: hsl(228, 45%, 44%); } */
 html, body{
   margin:0; padding:0; box-sizing:border-box; clear:both;
+  font-family: 'Lexend Deca', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -14,44 +15,6 @@ body{
   background-color: hsl(233, 47%, 7%);
   width: 100vw;
   height: 100vh;
-}
-.card{
-  background-color:hsl(244, 38%, 16%);
-  border-radius: 0px 0px 10px 10px;
-  width: 10rem;
-  height: 16rem;
-  margin-top: 8.25rem;
-}
-.mainheading{
-  font-size: 0.8rem;
-  padding: 1rem 1rem 0.5rem 1rem;
-  text-align: center;
-}
-.mainheading, .stats{
-  color:hsl(0, 0%, 100%);
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
-}
-.mainparagraph{
-  color:hsla(0, 0%, 100%, 0.75);
-  font-size: 0.6rem;
-  font-family: 'Lexend Deca', sans-serif;
-  margin: 0rem 1rem;
-  line-height: 0.7rem;
-  text-align: center;
-}
-.statheadings{
-  color:hsla(0, 0%, 100%, 0.6);
-  font-family: 'Lexend Deca', sans-serif;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-  -webkit-transform: scale(0.5);
-}
-.stats{
-  font-size: 0.7rem;
-}
-img{
-  border-radius: 10px 10px 0px 0px;
 }
 .img1{
   width: 10rem;
@@ -66,19 +29,54 @@ img{
   position: absolute;
   z-index: 2;
 }
+img{
+  border-radius: 10px 10px 0px 0px;
+}
+.card{
+  background-color:hsl(244, 38%, 16%);
+  border-radius: 0px 0px 10px 10px;
+  width: 10rem;
+  height: 16.5rem;
+  margin-top: 8.25rem;
+}
+.mainheading{
+  font-size: 0.8rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  text-align: center;
+}
+.mainheading, .stats{
+  color:hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+.mainparagraph{
+  color:hsla(0, 0%, 100%, 0.75);
+  font-size: 0.6rem;
+  margin: 0rem 1rem;
+  line-height: 0.7rem;
+  text-align: center;
+}
+.stats{
+  font-size: 0.7rem;
+}
+.statheadings{
+  color:hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  -webkit-transform: scale(0.5);
+}
 bottom{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 .box{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.7rem;
+  margin-top: 0.5rem;
 }
 @media screen and (min-width:1440px){
   html{
@@ -113,16 +111,16 @@ bottom{
     text-align: start;
     margin: 0rem 2rem;
   }
-  bottom{
-    flex-direction: row;
-    justify-content: space-around;
+  .stats{
+    font-size: 1.2rem;
   }
   .statheadings{
     font-size: 0.7rem;
     -webkit-transform: none;
   }
-  .stats{
-    font-size: 1.2rem;
+  bottom{
+    flex-direction: row;
+    justify-content: space-around;
   }
   .box{
     margin-right: 0.9rem;
